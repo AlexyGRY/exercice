@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A vous de jouer RWD</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media (min-width:481px) and (max-width:1199px){
+        
+
+
+            .grid-container{
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: repeat(3,200px);
+                grid-template-rows: repeat(3,200px);
+                width: 50%;
+            }
+
+            .zone-1{
+                background-color: #ff0000;
+            }
+
+            .zone-2{
+                background-color: aqua;
+            }
+
+            .zone-3{
+                background-color: blue;
+            }
+
+            .zone-4{
+                background-color: green;
+            }
+
+            .zone-5{
+                background-color: purple;
+            }
+
+            .zone-6{
+                background-color: yellow;
+            }
+
+            .zone-7{
+                background-color: bisque;
+            }
+
+            .zone-8{
+                background-color: lightgreen;
+            }
+
+            .zone-9{
+                background-color: brown;
+            }
+
+        }
+
+        @media (min-width:1200px){
+
+            .grid-container{
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: repeat(3,200px);
+                grid-template-rows: repeat(5,200px);
+                width: 100%;
+            }
+
+            .zone-1{
+                background-color: #ff0000;
+            }
+
+            .zone-2{
+                background-color: aqua;
+            }
+
+            .zone-3{
+                background-color: blue;
+            }
+
+            .zone-4{
+                background-color: green;
+            }
+
+            .zone-5{
+                background-color: purple;
+                grid-row: 2/4;
+                grid-column: 2/3;
+
+            }
+
+            .zone-6{
+                background-color: yellow;
+                grid-row: 3/4;
+                grid-column: 1/2;
+            }
+
+            .zone-7{
+                background-color: bisque;
+                grid-column: 1/4;
+                grid-row: 5/6;
+            }
+
+            .zone-8{
+                background-color: lightgreen;
+                grid-column: 1/3;
+                grid-row: 4/5;
+            }
+
+            .zone-9{
+                background-color: brown;
+                grid-column: 3/4;
+                grid-row: 2/5;
+            }
+
+
+        }
+
+        @media (max-width:480px){
+
+
+            .grid-container{
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: repeat(3,200px);
+                grid-template-rows: repeat(5,200px);
+                width: 80%;
+            }
+
+            .zone-1{
+                background-color: #ff0000;
+                grid-column: 1/4;
+                grid-row: 1/2;
+            }
+
+            .zone-2{
+                background-color: aqua;
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+
+            .zone-3{
+                background-color: blue;
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+
+            .zone-4{
+                background-color: green;
+                grid-column: 1/3;
+                grid-row: 3/5;
+            }
+
+            .zone-5{
+                background-color: purple;
+            }
+
+            .zone-6{
+                background-color: yellow;
+            }
+
+            .zone-7{
+                background-color: bisque;
+            }
+
+            .zone-8{
+                background-color: lightgreen;
+            }
+
+            .zone-9{
+                background-color: brown;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Mon super titre !</h1>
+    <div class="grid-container">
+        <div class="grid-item zone-1">1</div>
+        <div class="grid-item zone-2">2</div>
+        <div class="grid-item zone-3">3</div>
+        <div class="grid-item zone-4">4</div>
+        <div class="grid-item zone-5">5</div>
+        <div class="grid-item zone-6">6</div>
+        <div class="grid-item zone-7">7</div>
+        <div class="grid-item zone-8">8</div>
+        <div class="grid-item zone-9">9</div>
+    </div>
+</body>
+
+</html>
