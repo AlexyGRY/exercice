@@ -179,7 +179,7 @@
 
 .icons-wrapper {
     background-color: var(--text-white);
-    display: flex;
+    display: grid;
     flex-direction: column;
     width: 2.5rem;
     justify-content: center;
